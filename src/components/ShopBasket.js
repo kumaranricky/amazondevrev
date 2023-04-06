@@ -1,10 +1,17 @@
 import './shopBasket.css';
 import { useStateValue } from './StateProvider';
+
 const ShopBasket = () => {
   const { myReducer } = useStateValue();
   const [ state, dispatch ] = myReducer;
 
-  
+  const clickHanler=()=>{
+    dispatch({
+        type:'REMOVE_FROM_CART',
+        payload:id
+      })
+    
+  }
   return(
     <div className="shopBasket">
       <h2>Your Shopping Basket</h2>
@@ -19,7 +26,7 @@ const ShopBasket = () => {
               <div>{item.title}</div>
               <p><strong>${item.price}</strong></p>
               <div>{item.rating}</div>
-              <button>Remove from Cart</button>
+              <button onClick={()=>clickHanler(item.id)}> Remove from Cart</button>
             </div>
           </li>))
         }

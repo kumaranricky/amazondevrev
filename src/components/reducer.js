@@ -63,7 +63,11 @@ export const initialState = {
           ...state, 
           cartList:[...state.cartList, action.payload]
         };
-      
+    case 'REMOVE_FROM_CART':
+         return { 
+          ...state, 
+          cartList: state.cartList.filter(item => item.id !== action.payload)
+        };
       default:
         return state;
     }

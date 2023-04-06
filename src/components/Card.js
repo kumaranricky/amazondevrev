@@ -6,6 +6,8 @@ const Card = (props) => {
   const [ , dispatch] = myReducer;
 
   const clickHanler = (selectedValue) => {
+    const timestamp = new Date().getTime();
+    selectedValue={ ...selectedValue,id:timestamp};
     dispatch({
       type:'ADD_TO_CART',
       payload: selectedValue
