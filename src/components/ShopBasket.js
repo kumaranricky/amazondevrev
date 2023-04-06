@@ -5,7 +5,7 @@ const ShopBasket = () => {
   const { myReducer } = useStateValue();
   const [ state, dispatch ] = myReducer;
 
-  const clickHanler=()=>{
+  const clickHanler=(id)=>{
     dispatch({
         type:'REMOVE_FROM_CART',
         payload:id
@@ -24,7 +24,7 @@ const ShopBasket = () => {
             </div>
             <div className='itemDeatils'>
               <div>{item.title}</div>
-              <p><strong>${item.price}</strong></p>
+              <p><strong>Rs{item.price}</strong></p>
               <div>{item.rating}</div>
               <button onClick={()=>clickHanler(item.id)}> Remove from Cart</button>
             </div>
