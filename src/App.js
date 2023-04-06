@@ -4,6 +4,7 @@ import Banner from "./components/Banner";
 import ProductList from "./components/ProductList";
 import Checkout from "./components/Checkout";
 import ShopBasket from "./components/ShopBasket";
+import Login from "./components/Login";
 import React from "react";
 
 function App() {
@@ -23,7 +24,12 @@ function App() {
             <ShopBasket/>
           </React.Fragment>
         } />
+         <Route exact path='/login' elements={
+          <Login/>
+         }/>
         </Routes>
+        
+
       </Router>
     );
   }

@@ -16,7 +16,7 @@ const Card = (props) => {
   return(
     <div className='card'>
       <p className='title'>{ title }</p>
-      <p className='price'>${ price }</p>
+      <p className='price'>Rs{ price }</p>
       <p className='starRating'>{ <Rating rating={rating} /> }</p>
       <div className='imageHolder'>
         <img src={imageURL} alt=''/>
