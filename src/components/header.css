@@ -8,11 +8,22 @@
 	z-index: 100;
 	color: white;
 }
+.header a {
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+}
+.header a svg, .header a span {
+	display: inline-block;
+	vertical-align: middle;
+}
 .header__logo {
 	display: flex;
 	align-items: center;
-	color: #ff9f00;
 	margin: 0 25px;
+}
+.header__logo svg {
+	color: #ff9f00;
 }
 .header__logoName {
 	font-size: large;
