@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/amazondevrev/static/css/main.f739ecdd.css",
+    "main.js": "/amazondevrev/static/js/main.ee8a9120.js",
+    "static/js/787.05cd28b3.chunk.js": "/amazondevrev/static/js/787.05cd28b3.chunk.js",
+    "index.html": "/amazondevrev/index.html",
+    "main.f739ecdd.css.map": "/amazondevrev/static/css/main.f739ecdd.css.map",
+    "main.ee8a9120.js.map": "/amazondevrev/static/js/main.ee8a9120.js.map",
+    "787.05cd28b3.chunk.js.map": "/amazondevrev/static/js/787.05cd28b3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f739ecdd.css",
+    "static/js/main.ee8a9120.js"
+  ]
+}
